@@ -1,0 +1,15 @@
+/Users/akhilrkngmail.com/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/akhilrkngmail.com/Library/Python/3.9/lib/python/site-packages/flask_limiter/extension.py:330: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+2025-08-12 21:54:31,129 - INFO - Database initialized successfully
+🚀 Starting Google News API Service...
+📖 Documentation: http://localhost:4000/docs
+🏠 Homepage: http://localhost:4000
+🔑 Register: http://localhost:4000/api/v1/register
+
+💰 Start making money with your API!
+ * Serving Flask app 'news_api_service'
+ * Debug mode: on
+Address already in use
+Port 4000 is in use by another program. Either identify and stop that program, or start the server with a different port.

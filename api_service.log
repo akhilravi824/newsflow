@@ -1,0 +1,148 @@
+2025-08-12 20:18:29,200 - INFO - Database initialized successfully
+2025-08-12 20:18:29,228 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.80:5000
+2025-08-12 20:18:29,228 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:18:29,228 - INFO -  * Restarting with stat
+2025-08-12 20:18:29,510 - INFO - Database initialized successfully
+2025-08-12 20:18:29,524 - WARNING -  * Debugger is active!
+2025-08-12 20:18:29,529 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:18:44,889 - INFO - Created new user with plan: free
+2025-08-12 20:18:44,889 - INFO - 127.0.0.1 - - [12/Aug/2025 20:18:44] "GET /api/v1/register HTTP/1.1" 200 -
+2025-08-12 20:18:44,936 - INFO - 127.0.0.1 - - [12/Aug/2025 20:18:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 20:18:52,373 - INFO - 127.0.0.1 - - [12/Aug/2025 20:18:52] "GET /docs HTTP/1.1" 200 -
+2025-08-12 20:19:02,845 - INFO - 127.0.0.1 - - [12/Aug/2025 20:19:02] "GET / HTTP/1.1" 200 -
+2025-08-12 20:19:08,803 - INFO - Created new user with plan: free
+2025-08-12 20:19:08,804 - INFO - 127.0.0.1 - - [12/Aug/2025 20:19:08] "GET /api/v1/register?plan=free HTTP/1.1" 200 -
+2025-08-12 20:19:17,014 - INFO - 127.0.0.1 - - [12/Aug/2025 20:19:17] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:19:17,038 - INFO - 127.0.0.1 - - [12/Aug/2025 20:19:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 20:20:19,855 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:19] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:20,473 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:20] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:20,685 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:20] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:20,902 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:20] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:21,104 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:21] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:21,303 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:21] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:21,505 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:21] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:21,702 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:21] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:21,904 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:21] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:22,107 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:22] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:22,321 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:22] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:22,537 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:22] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:22,752 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:22] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:22,970 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:22] "GET /health HTTP/1.1" 200 -
+2025-08-12 20:20:33,650 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:33] "GET / HTTP/1.1" 200 -
+2025-08-12 20:20:35,300 - INFO - Created new user with plan: free
+2025-08-12 20:20:35,300 - INFO - 127.0.0.1 - - [12/Aug/2025 20:20:35] "GET /api/v1/register?plan=free HTTP/1.1" 200 -
+2025-08-12 20:21:25,369 - INFO - Database initialized successfully
+2025-08-12 20:21:25,388 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.80:5000
+2025-08-12 20:21:25,388 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:21:25,388 - INFO -  * Restarting with stat
+2025-08-12 20:21:25,658 - INFO - Database initialized successfully
+2025-08-12 20:21:25,673 - WARNING -  * Debugger is active!
+2025-08-12 20:21:25,676 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:28:29,854 - INFO - Database initialized successfully
+2025-08-12 20:28:57,946 - INFO - Database initialized successfully
+2025-08-12 20:28:57,964 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.80:8080
+2025-08-12 20:28:57,964 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:28:57,965 - INFO -  * Restarting with stat
+2025-08-12 20:28:58,233 - INFO - Database initialized successfully
+2025-08-12 20:28:58,246 - WARNING -  * Debugger is active!
+2025-08-12 20:28:58,250 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:31:20,349 - INFO - Database initialized successfully
+2025-08-12 20:31:20,367 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.80:8080
+2025-08-12 20:31:20,367 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:31:20,367 - INFO -  * Restarting with stat
+2025-08-12 20:31:20,634 - INFO - Database initialized successfully
+2025-08-12 20:31:20,648 - WARNING -  * Debugger is active!
+2025-08-12 20:31:20,652 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:31:30,708 - INFO - 127.0.0.1 - - [12/Aug/2025 20:31:30] "GET / HTTP/1.1" 200 -
+2025-08-12 20:31:30,741 - INFO - 127.0.0.1 - - [12/Aug/2025 20:31:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 20:32:03,872 - INFO - Database initialized successfully
+2025-08-12 20:32:03,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.80:8080
+2025-08-12 20:32:03,891 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:32:03,891 - INFO -  * Restarting with stat
+2025-08-12 20:32:04,172 - INFO - Database initialized successfully
+2025-08-12 20:32:04,186 - WARNING -  * Debugger is active!
+2025-08-12 20:32:04,190 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:33:34,543 - INFO - Database initialized successfully
+2025-08-12 20:35:14,425 - INFO - Database initialized successfully
+2025-08-12 20:35:14,443 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.0.0.80:3000
+2025-08-12 20:35:14,443 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:35:14,443 - INFO -  * Restarting with stat
+2025-08-12 20:35:14,713 - INFO - Database initialized successfully
+2025-08-12 20:35:14,727 - WARNING -  * Debugger is active!
+2025-08-12 20:35:14,731 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:35:30,363 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:30] "GET / HTTP/1.1" 200 -
+2025-08-12 20:35:30,365 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:30] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-08-12 20:35:30,366 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:30] "[33mGET /app.js HTTP/1.1[0m" 404 -
+2025-08-12 20:35:38,541 - INFO - Created new user with plan: free
+2025-08-12 20:35:38,542 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:38] "GET /api/v1/register?plan=free HTTP/1.1" 200 -
+2025-08-12 20:35:38,546 - INFO - Loaded 21 proxies from file
+2025-08-12 20:35:38,546 - ERROR - Error in API endpoint: 'ProxyManager' object has no attribute 'validate_all_proxies'
+2025-08-12 20:35:38,546 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:38] "[35m[1mGET /api/v1/news/tala?sort=1&time=d HTTP/1.1[0m" 500 -
+2025-08-12 20:35:47,602 - INFO - Created new user with plan: free
+2025-08-12 20:35:47,602 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:47] "GET /api/v1/register?plan=free HTTP/1.1" 200 -
+2025-08-12 20:35:47,611 - INFO - Loaded 21 proxies from file
+2025-08-12 20:35:47,612 - ERROR - Error in API endpoint: 'ProxyManager' object has no attribute 'validate_all_proxies'
+2025-08-12 20:35:47,612 - INFO - 127.0.0.1 - - [12/Aug/2025 20:35:47] "[35m[1mGET /api/v1/news/tsla?sort=1&time=d HTTP/1.1[0m" 500 -
+2025-08-12 20:37:24,504 - INFO - Database initialized successfully
+2025-08-12 20:37:24,522 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.0.0.80:3000
+2025-08-12 20:37:24,522 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:37:24,523 - INFO -  * Restarting with stat
+2025-08-12 20:37:24,798 - INFO - Database initialized successfully
+2025-08-12 20:37:24,812 - WARNING -  * Debugger is active!
+2025-08-12 20:37:24,816 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:38:00,547 - INFO - Database initialized successfully
+2025-08-12 20:39:35,329 - INFO - Database initialized successfully
+2025-08-12 20:39:35,349 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:4000
+ * Running on http://10.0.0.80:4000
+2025-08-12 20:39:35,349 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 20:39:35,349 - INFO -  * Restarting with stat
+2025-08-12 20:39:35,621 - INFO - Database initialized successfully
+2025-08-12 20:39:35,635 - WARNING -  * Debugger is active!
+2025-08-12 20:39:35,638 - INFO -  * Debugger PIN: 398-534-631
+2025-08-12 20:41:12,986 - INFO - 127.0.0.1 - - [12/Aug/2025 20:41:12] "GET / HTTP/1.1" 200 -
+2025-08-12 20:41:13,017 - INFO - 127.0.0.1 - - [12/Aug/2025 20:41:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 20:41:19,500 - INFO - Created new user with plan: free
+2025-08-12 20:41:19,500 - INFO - 127.0.0.1 - - [12/Aug/2025 20:41:19] "GET /api/v1/register?plan=free HTTP/1.1" 200 -
+2025-08-12 20:41:19,507 - INFO - Loaded 21 proxies from file
+2025-08-12 20:41:19,507 - INFO - Validating all proxies...
+2025-08-12 20:41:19,797 - INFO - Proxy validation complete: 21/21 working
+2025-08-12 20:41:19,799 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws
+2025-08-12 20:41:19,799 - INFO - Rotating proxy: 67.211.219.122:8888 -> 171.231.175.71:7010
+2025-08-12 20:41:20,264 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=10
+2025-08-12 20:41:20,729 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=20
+2025-08-12 20:41:21,107 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=30
+2025-08-12 20:41:21,547 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=40
+2025-08-12 20:41:21,872 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=50
+2025-08-12 20:41:22,470 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=60
+2025-08-12 20:41:23,070 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=70
+2025-08-12 20:41:23,604 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=80
+2025-08-12 20:41:23,977 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=90
+2025-08-12 20:41:24,512 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=100
+2025-08-12 20:41:24,512 - INFO - Rotating proxy: 190.103.177.131:80 -> 82.102.10.253:80
+2025-08-12 20:41:24,903 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=110
+2025-08-12 20:41:25,513 - INFO - Fetching: https://www.google.com/search?q=tsla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=120
+2025-08-12 20:41:26,032 - INFO - 127.0.0.1 - - [12/Aug/2025 20:41:26] "GET /api/v1/news/tsla?sort=1&time=d HTTP/1.1" 200 -
+2025-08-12 21:54:31,129 - INFO - Database initialized successfully

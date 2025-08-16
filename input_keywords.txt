@@ -1,0 +1,3 @@
+tesla:1:d
+ai:1:w
+crypto:1:m 

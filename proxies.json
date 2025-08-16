@@ -1,0 +1,233 @@
+[
+  {
+    "host": "103.82.22.129",
+    "port": 10001,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Vietnam",
+    "success_count": 3,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "113.160.132.195",
+    "port": 8080,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Vietnam",
+    "success_count": 3,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "67.211.219.122",
+    "port": 8888,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "United States",
+    "success_count": 8,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "171.231.175.71",
+    "port": 7010,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Vietnam",
+    "success_count": 7,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "116.98.187.95",
+    "port": 1014,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Vietnam",
+    "success_count": 4,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "91.84.99.28",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Netherlands",
+    "success_count": 3,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "77.110.114.116",
+    "port": 8080,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "United States",
+    "success_count": 6,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "203.162.13.222",
+    "port": 6868,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Vietnam",
+    "success_count": 7,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "85.133.240.75",
+    "port": 8080,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Iran",
+    "success_count": 3,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "173.209.63.69",
+    "port": 8111,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Canada",
+    "success_count": 3,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "115.74.5.48",
+    "port": 10004,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Vietnam",
+    "success_count": 4,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "47.251.43.115",
+    "port": 33333,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "United States",
+    "success_count": 7,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "47.90.205.231",
+    "port": 33333,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "United States",
+    "success_count": 2,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "8.219.97.248",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "Singapore",
+    "success_count": 6,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "190.103.177.131",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "http",
+    "country": "Argentina",
+    "success_count": 6,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "82.102.10.253",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "http",
+    "country": "United Kingdom",
+    "success_count": 5,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "80.240.23.28",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "http",
+    "country": "Germany",
+    "success_count": 4,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "18.135.100.214",
+    "port": 3128,
+    "username": null,
+    "password": null,
+    "protocol": "https",
+    "country": "United Kingdom",
+    "success_count": 2,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "103.214.109.66",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "http",
+    "country": "United States",
+    "success_count": 6,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "38.60.109.55",
+    "port": 80,
+    "username": null,
+    "password": null,
+    "protocol": "http",
+    "country": "United States",
+    "success_count": 10,
+    "fail_count": 0,
+    "is_working": true
+  },
+  {
+    "host": "127.0.0.1",
+    "port": 8080,
+    "username": null,
+    "password": null,
+    "protocol": "http",
+    "country": null,
+    "success_count": 5,
+    "fail_count": 0,
+    "is_working": true
+  }
+]
