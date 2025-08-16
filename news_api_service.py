@@ -636,19 +636,15 @@ def landing_page():
         <style>
             :root { --primary:#667eea; --primary2:#764ba2; --bg:#0e1330; --card:#10163a; --muted:#9aa4b2; }
             * { box-sizing: border-box; }
-            body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: radial-gradient(1200px 600px at 30% -20%, rgba(118,75,162,0.25), transparent), radial-gradient(1000px 500px at 90% 0%, rgba(102,126,234,0.25), transparent), var(--bg); color: #e8edf3; }
-            .shell { max-width: 1100px; margin: 0 auto; padding: 24px; }
-            header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 8px 0 18px; }
-            .brand { display:flex; align-items:center; gap:10px; }
-            .brand .logo { width:36px; height:36px; border-radius:8px; background: linear-gradient(135deg, var(--primary), var(--primary2)); box-shadow: 0 10px 30px rgba(118,75,162,0.35); }
-            .brand h1 { font-size: 1.25rem; margin:0; letter-spacing:.2px; }
-            nav { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+            body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: radial-gradient(1200px 600px at 30% -20%, rgba(118,75,162,0.25), transparent), radial-gradient(1000px 500px at 90% 0%, rgba(102,126,234,0.25), transparent), var(--bg); color: #e8edf3; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+            .shell { max-width: 600px; width: 100%; padding: 24px; }
+            header { display:flex; align-items:center; justify-content:center; gap:12px; padding: 8px 0 18px; }
+            .brand { display:none; }
+            nav { display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content: center; }
             .tab { background: transparent; border: 1px solid rgba(255,255,255,0.12); color:#dfe7ef; padding:8px 12px; border-radius:8px; cursor:pointer; }
             .tab.active { background: linear-gradient(135deg, rgba(102,126,234,0.18), rgba(118,75,162,0.18)); border-color: transparent; }
             .grid2 { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
-            .left { grid-column: span 8; }
-            .right { grid-column: span 4; }
-            @media (max-width: 900px){ .left{grid-column: span 12;} .right{grid-column: span 12;} }
+            .left { grid-column: span 12; }
             .card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05); }
             h2 { font-size: 1.05rem; margin:0 0 10px; color:#ffffff; letter-spacing:.2px; }
             p.muted, .muted { color: var(--muted); margin: 4px 0 12px; font-size:.95rem; }
@@ -690,19 +686,12 @@ def landing_page():
             <div class="grid2">
                 <section class="left">
                     <!-- Home -->
-                    <div class="card" data-panel="home">
-                        <h2>Welcome</h2>
-                        <p class="muted">A consolidated dashboard to register, search, view usage, and read docs — all in one place.</p>
-                        <div class="kpi">
-                            <div class="pill">Fast async scraper</div>
-                            <div class="pill">Proxy rotation</div>
-                            <div class="pill">Rate limits by plan</div>
-                            <div class="pill">CSV export backend</div>
-                        </div>
-                        <div class="row" style="margin-top:12px;">
-                            <button class="btn" onclick="switchTab('search')">Start Searching</button>
-                            <button class="btn secondary" onclick="switchTab('register')">Create API Key</button>
-                            <a class="btn secondary" href="https://github.com/akhilravi824/newsflow" target="_blank" rel="noopener">GitHub</a>
+                    <div class="card" data-panel="home" style="text-align: center;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">NewsFlow Analytics Hub</h2>
+                        <p class="muted" style="font-size: 1.1rem; margin-bottom: 24px;">News intelligence platform with search, registration, and API management.</p>
+                        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                            <button class="btn" onclick="switchTab('search')" style="padding: 12px 24px; font-size: 1rem;">Start Searching</button>
+                            <button class="btn secondary" onclick="switchTab('register')" style="padding: 12px 24px; font-size: 1rem;">Create API Key</button>
                         </div>
                     </div>
 
@@ -710,6 +699,12 @@ def landing_page():
                     <div class="card" data-panel="search" style="display:none;">
                         <h2>Search News</h2>
                         <p class="muted">Enter a keyword, select time/sort and search using your API key.</p>
+                        <div class="row">
+                            <div>
+                                <label>API Key</label>
+                                <input id="apiKey" type="text" placeholder="Enter your API key" oninput="persistKey()" />
+                            </div>
+                        </div>
                         <div class="row">
                             <div>
                                 <label>Keyword</label>
@@ -787,28 +782,10 @@ def landing_page():
                     </div>
                 </section>
 
-                <aside class="right">
-                    <div class="card">
-                        <h2>Session</h2>
-                        <label>API Key</label>
-                        <input id="apiKey" type="text" placeholder="Paste your API key here" oninput="persistKey()" />
-                        <p class="muted" id="keyState"></p>
-                        <div class="stack">
-                            <button class="btn secondary" onclick="copyKey()">Copy Key</button>
-                            <button class="btn secondary" onclick="clearKey()">Clear</button>
-                        </div>
-                        <hr style="border:none;border-top:1px dashed rgba(255,255,255,0.12); margin:14px 0;" />
-                        <h2>Helpful Links</h2>
-                        <div class="stack">
-                            <a class="btn secondary" href="/health" target="_blank">Health</a>
-                            <a class="btn secondary" href="/test" target="_blank">Test</a>
-                            <a class="btn secondary" href="/api/v1/register?plan=free" target="_blank">Quick Register (GET)</a>
-                        </div>
-                    </div>
-                </aside>
+
             </div>
 
-            <div class="muted" style="margin-top:18px;">© NewsFlow Analytics Hub</div>
+
         </div>
 
         <script>

@@ -629,3 +629,183 @@ TypeError: handle_client() missing 1 required positional argument: 'path'
 2025-08-16 13:52:24,504 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=200
 2025-08-16 13:52:24,504 - INFO - Rotating proxy: 91.84.99.28:80 -> 77.110.114.116:8080
 2025-08-16 13:52:25,201 - INFO - 127.0.0.1 - - [16/Aug/2025 13:52:25] "GET /api/v1/news/Tesla?sort=1&time=d&page=0 HTTP/1.1" 200 -
+2025-08-16 14:25:29,194 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 14:25:29,256 - INFO -  * Restarting with stat
+2025-08-16 14:25:29,683 - INFO - Database initialized successfully
+2025-08-16 14:25:29,700 - WARNING -  * Debugger is active!
+2025-08-16 14:25:29,705 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:18:07,179 - INFO - 127.0.0.1 - - [16/Aug/2025 15:18:07] "GET / HTTP/1.1" 200 -
+2025-08-16 15:18:36,669 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:18:36,726 - INFO -  * Restarting with stat
+2025-08-16 15:18:37,102 - INFO - Database initialized successfully
+2025-08-16 15:18:37,117 - WARNING -  * Debugger is active!
+2025-08-16 15:18:37,121 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:18:40,177 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:18:40,244 - INFO -  * Restarting with stat
+2025-08-16 15:18:40,531 - INFO - Database initialized successfully
+2025-08-16 15:18:40,550 - WARNING -  * Debugger is active!
+2025-08-16 15:18:40,553 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:18:45,620 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:18:45,668 - INFO -  * Restarting with stat
+2025-08-16 15:18:45,948 - INFO - Database initialized successfully
+2025-08-16 15:18:45,960 - WARNING -  * Debugger is active!
+2025-08-16 15:18:45,964 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:18:59,169 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:18:59,220 - INFO -  * Restarting with stat
+2025-08-16 15:18:59,505 - INFO - Database initialized successfully
+2025-08-16 15:18:59,517 - WARNING -  * Debugger is active!
+2025-08-16 15:18:59,520 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:19:04,624 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:19:04,679 - INFO -  * Restarting with stat
+2025-08-16 15:19:04,955 - INFO - Database initialized successfully
+2025-08-16 15:19:04,968 - WARNING -  * Debugger is active!
+2025-08-16 15:19:04,971 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:19:07,927 - INFO - 127.0.0.1 - - [16/Aug/2025 15:19:07] "GET / HTTP/1.1" 200 -
+2025-08-16 15:19:47,761 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:19:47,815 - INFO -  * Restarting with stat
+2025-08-16 15:19:48,094 - INFO - Database initialized successfully
+2025-08-16 15:19:48,107 - WARNING -  * Debugger is active!
+2025-08-16 15:19:48,111 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:19:53,211 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:19:53,280 - INFO -  * Restarting with stat
+2025-08-16 15:19:53,558 - INFO - Database initialized successfully
+2025-08-16 15:19:53,570 - WARNING -  * Debugger is active!
+2025-08-16 15:19:53,574 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:19:56,894 - INFO - 127.0.0.1 - - [16/Aug/2025 15:19:56] "GET / HTTP/1.1" 200 -
+2025-08-16 15:20:39,354 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:20:39,421 - INFO -  * Restarting with stat
+2025-08-16 15:20:39,751 - INFO - Database initialized successfully
+2025-08-16 15:20:39,767 - WARNING -  * Debugger is active!
+2025-08-16 15:20:39,772 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:20:44,866 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:20:44,922 - INFO -  * Restarting with stat
+2025-08-16 15:20:45,225 - INFO - Database initialized successfully
+2025-08-16 15:20:45,237 - WARNING -  * Debugger is active!
+2025-08-16 15:20:45,240 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:20:45,962 - INFO - 127.0.0.1 - - [16/Aug/2025 15:20:45] "GET / HTTP/1.1" 200 -
+2025-08-16 15:21:22,912 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:21:22,967 - INFO -  * Restarting with stat
+2025-08-16 15:21:23,245 - INFO - Database initialized successfully
+2025-08-16 15:21:23,258 - WARNING -  * Debugger is active!
+2025-08-16 15:21:23,261 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:21:28,258 - INFO - 127.0.0.1 - - [16/Aug/2025 15:21:28] "GET / HTTP/1.1" 200 -
+2025-08-16 15:21:29,338 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:21:29,393 - INFO -  * Restarting with stat
+2025-08-16 15:21:29,675 - INFO - Database initialized successfully
+2025-08-16 15:21:29,687 - WARNING -  * Debugger is active!
+2025-08-16 15:21:29,691 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:21:33,752 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:21:33,803 - INFO -  * Restarting with stat
+2025-08-16 15:21:34,090 - INFO - Database initialized successfully
+2025-08-16 15:21:34,103 - WARNING -  * Debugger is active!
+2025-08-16 15:21:34,107 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:22:12,819 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:22:12,860 - INFO -  * Restarting with stat
+2025-08-16 15:22:13,181 - INFO - Database initialized successfully
+2025-08-16 15:22:13,198 - WARNING -  * Debugger is active!
+2025-08-16 15:22:13,204 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:22:30,453 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:22:30,496 - INFO -  * Restarting with stat
+2025-08-16 15:22:30,823 - INFO - Database initialized successfully
+2025-08-16 15:22:30,838 - WARNING -  * Debugger is active!
+2025-08-16 15:22:30,843 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:22:40,996 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:22:41,049 - INFO -  * Restarting with stat
+2025-08-16 15:22:41,361 - INFO - Database initialized successfully
+2025-08-16 15:22:41,374 - WARNING -  * Debugger is active!
+2025-08-16 15:22:41,378 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:22:45,693 - INFO - 127.0.0.1 - - [16/Aug/2025 15:22:45] "GET / HTTP/1.1" 200 -
+2025-08-16 15:22:49,507 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:22:49,550 - INFO -  * Restarting with stat
+2025-08-16 15:22:49,834 - INFO - Database initialized successfully
+2025-08-16 15:22:49,848 - WARNING -  * Debugger is active!
+2025-08-16 15:22:49,851 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:23:47,933 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:23:47,983 - INFO -  * Restarting with stat
+2025-08-16 15:23:48,326 - INFO - Database initialized successfully
+2025-08-16 15:23:48,341 - WARNING -  * Debugger is active!
+2025-08-16 15:23:48,344 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:23:53,430 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:23:53,468 - INFO -  * Restarting with stat
+2025-08-16 15:23:53,745 - INFO - Database initialized successfully
+2025-08-16 15:23:53,758 - WARNING -  * Debugger is active!
+2025-08-16 15:23:53,761 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:23:53,768 - INFO - 127.0.0.1 - - [16/Aug/2025 15:23:53] "GET / HTTP/1.1" 200 -
+2025-08-16 15:25:12,215 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:25:12,275 - INFO -  * Restarting with stat
+2025-08-16 15:25:12,551 - INFO - Database initialized successfully
+2025-08-16 15:25:12,564 - WARNING -  * Debugger is active!
+2025-08-16 15:25:12,567 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:25:20,718 - INFO -  * Detected change in '/Users/akhilrkngmail.com/Desktop/google news/news_api_service.py', reloading
+2025-08-16 15:25:20,779 - INFO -  * Restarting with stat
+2025-08-16 15:25:21,059 - INFO - Database initialized successfully
+2025-08-16 15:25:21,072 - WARNING -  * Debugger is active!
+2025-08-16 15:25:21,076 - INFO -  * Debugger PIN: 118-103-492
+2025-08-16 15:25:23,759 - INFO - 127.0.0.1 - - [16/Aug/2025 15:25:23] "GET / HTTP/1.1" 200 -
+2025-08-16 15:25:30,472 - INFO - Loaded 21 proxies from file
+2025-08-16 15:25:30,472 - INFO - Validating all proxies...
+2025-08-16 15:25:31,114 - INFO - Proxy validation complete: 21/21 working
+2025-08-16 15:25:31,117 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws
+2025-08-16 15:25:31,117 - INFO - Rotating proxy: 67.211.219.122:8888 -> 171.231.175.71:7010
+2025-08-16 15:25:31,732 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=10
+2025-08-16 15:25:32,297 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=20
+2025-08-16 15:25:32,946 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=30
+2025-08-16 15:25:33,547 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=40
+2025-08-16 15:25:34,171 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=50
+2025-08-16 15:25:34,818 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=60
+2025-08-16 15:25:35,393 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=70
+2025-08-16 15:25:44,493 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=80
+2025-08-16 15:25:45,162 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=90
+2025-08-16 15:25:45,785 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=100
+2025-08-16 15:25:45,786 - INFO - Rotating proxy: 190.103.177.131:80 -> 82.102.10.253:80
+2025-08-16 15:25:46,404 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=110
+2025-08-16 15:25:47,096 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=120
+2025-08-16 15:25:47,740 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=130
+2025-08-16 15:25:48,377 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=140
+2025-08-16 15:25:49,014 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=150
+2025-08-16 15:25:49,668 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=160
+2025-08-16 15:25:50,238 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=170
+2025-08-16 15:25:51,028 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=180
+2025-08-16 15:25:51,816 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=190
+2025-08-16 15:25:52,467 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=200
+2025-08-16 15:25:52,468 - INFO - Rotating proxy: 91.84.99.28:80 -> 77.110.114.116:8080
+2025-08-16 15:25:53,049 - INFO - Fetching: https://www.google.com/search?q=Tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=210
+2025-08-16 15:25:53,631 - INFO - 127.0.0.1 - - [16/Aug/2025 15:25:53] "GET /api/v1/news/Tesla?sort=1&time=d&page=0 HTTP/1.1" 200 -
+2025-08-16 15:26:37,999 - INFO - 127.0.0.1 - - [16/Aug/2025 15:26:37] "GET /api/v1/stats HTTP/1.1" 200 -
+2025-08-16 15:26:46,433 - INFO - 127.0.0.1 - - [16/Aug/2025 15:26:46] "GET /docs HTTP/1.1" 200 -
+2025-08-16 15:27:27,691 - INFO - 127.0.0.1 - - [16/Aug/2025 15:27:27] "GET / HTTP/1.1" 200 -
+2025-08-16 15:28:16,725 - INFO - Loaded 21 proxies from file
+2025-08-16 15:28:16,725 - INFO - Validating all proxies...
+2025-08-16 15:28:17,621 - INFO - Proxy validation complete: 21/21 working
+2025-08-16 15:28:17,624 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=10
+2025-08-16 15:28:17,624 - INFO - Rotating proxy: 67.211.219.122:8888 -> 171.231.175.71:7010
+2025-08-16 15:28:18,290 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=20
+2025-08-16 15:28:18,943 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=30
+2025-08-16 15:28:19,651 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=40
+2025-08-16 15:28:20,340 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=50
+2025-08-16 15:28:21,205 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=60
+2025-08-16 15:28:21,872 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=70
+2025-08-16 15:28:22,833 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=80
+2025-08-16 15:28:23,671 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=90
+2025-08-16 15:28:24,301 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=100
+2025-08-16 15:28:25,017 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=110
+2025-08-16 15:28:25,018 - INFO - Rotating proxy: 190.103.177.131:80 -> 82.102.10.253:80
+2025-08-16 15:28:25,690 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=120
+2025-08-16 15:28:26,386 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=130
+2025-08-16 15:28:27,082 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=140
+2025-08-16 15:28:27,939 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=150
+2025-08-16 15:28:28,627 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=160
+2025-08-16 15:28:29,282 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=170
+2025-08-16 15:28:30,167 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=180
+2025-08-16 15:28:30,868 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=190
+2025-08-16 15:28:31,835 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=200
+2025-08-16 15:28:32,566 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=210
+2025-08-16 15:28:32,567 - INFO - Rotating proxy: 91.84.99.28:80 -> 77.110.114.116:8080
+2025-08-16 15:28:33,163 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=220
+2025-08-16 15:28:33,974 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=230
+2025-08-16 15:28:34,854 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=240
+2025-08-16 15:28:35,656 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=250
+2025-08-16 15:28:36,419 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=260
+2025-08-16 15:28:37,174 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=270
+2025-08-16 15:28:38,017 - INFO - Fetching: https://www.google.com/search?q=amazon&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=280
+2025-08-16 15:28:38,756 - INFO - 127.0.0.1 - - [16/Aug/2025 15:28:38] "GET /api/v1/news/amazon?sort=1&time=d&page=10 HTTP/1.1" 200 -
