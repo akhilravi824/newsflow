@@ -84,3 +84,109 @@
 2025-08-12 20:08:56,713 - INFO - Exported 610 articles to output_2025_08_12.csv
 2025-08-12 20:08:56,716 - INFO - Exported summary to output_count_2025_08_12.csv
 2025-08-12 20:08:56,716 - INFO - Scraping completed in 20.82 seconds
+2025-08-16 13:19:52,554 - INFO - Starting scraper with 3 keywords
+2025-08-16 13:19:52,555 - INFO - Loaded 21 proxies from file
+2025-08-16 13:19:52,555 - INFO - Validating all proxies...
+2025-08-16 13:19:53,878 - INFO - Proxy validation complete: 21/21 working
+2025-08-16 13:19:53,881 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws
+2025-08-16 13:19:53,881 - INFO - Rotating proxy: 67.211.219.122:8888 -> 171.231.175.71:7010
+2025-08-16 13:19:53,881 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws
+2025-08-16 13:19:53,881 - INFO - Rotating proxy: 77.110.114.116:8080 -> 203.162.13.222:6868
+2025-08-16 13:19:53,881 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws
+2025-08-16 13:19:53,882 - INFO - Rotating proxy: 115.74.5.48:10004 -> 47.251.43.115:33333
+2025-08-16 13:19:54,479 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=10
+2025-08-16 13:19:54,524 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=10
+2025-08-16 13:19:54,557 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=10
+2025-08-16 13:19:54,944 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=20
+2025-08-16 13:19:54,953 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=20
+2025-08-16 13:19:54,963 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=20
+2025-08-16 13:19:55,455 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=30
+2025-08-16 13:19:55,513 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=30
+2025-08-16 13:19:55,852 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=40
+2025-08-16 13:19:55,852 - INFO - Rotating proxy: 173.209.63.69:8111 -> 115.74.5.48:10004
+2025-08-16 13:19:56,022 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=40
+2025-08-16 13:19:56,249 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=50
+2025-08-16 13:19:56,614 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=50
+2025-08-16 13:19:56,716 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=30
+2025-08-16 13:19:56,790 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=60
+2025-08-16 13:19:57,176 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=60
+2025-08-16 13:19:57,323 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=70
+2025-08-16 13:19:57,755 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=70
+2025-08-16 13:19:57,831 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=80
+2025-08-16 13:19:58,183 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=80
+2025-08-16 13:19:58,241 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=90
+2025-08-16 13:19:58,634 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=40
+2025-08-16 13:19:58,889 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=90
+2025-08-16 13:19:59,386 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=50
+2025-08-16 13:19:59,491 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=100
+2025-08-16 13:19:59,780 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=100
+2025-08-16 13:19:59,980 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=110
+2025-08-16 13:20:00,065 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=60
+2025-08-16 13:20:00,300 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=110
+2025-08-16 13:20:00,300 - INFO - Rotating proxy: 203.162.13.222:6868 -> 85.133.240.75:8080
+2025-08-16 13:20:00,610 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=120
+2025-08-16 13:20:00,784 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=70
+2025-08-16 13:20:00,863 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=120
+2025-08-16 13:20:01,287 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=130
+2025-08-16 13:20:01,520 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=130
+2025-08-16 13:20:01,804 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=140
+2025-08-16 13:20:01,868 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=80
+2025-08-16 13:20:02,120 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=140
+2025-08-16 13:20:02,338 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=150
+2025-08-16 13:20:02,626 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=90
+2025-08-16 13:20:03,044 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=100
+2025-08-16 13:20:03,045 - INFO - Rotating proxy: 115.74.5.48:10004 -> 47.251.43.115:33333
+2025-08-16 13:20:03,218 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=160
+2025-08-16 13:20:03,709 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=150
+2025-08-16 13:20:03,724 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=110
+2025-08-16 13:20:03,751 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=170
+2025-08-16 13:20:04,216 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=120
+2025-08-16 13:20:04,297 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=160
+2025-08-16 13:20:04,887 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=130
+2025-08-16 13:20:04,898 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=170
+2025-08-16 13:20:05,346 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=180
+2025-08-16 13:20:05,347 - INFO - Rotating proxy: 173.209.63.69:8111 -> 115.74.5.48:10004
+2025-08-16 13:20:05,496 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=180
+2025-08-16 13:20:05,496 - INFO - Rotating proxy: 8.219.97.248:80 -> 190.103.177.131:80
+2025-08-16 13:20:05,621 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=140
+2025-08-16 13:20:05,621 - INFO - Rotating proxy: 18.135.100.214:3128 -> 103.214.109.66:80
+2025-08-16 13:20:05,968 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=190
+2025-08-16 13:20:06,085 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=190
+2025-08-16 13:20:06,327 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=150
+2025-08-16 13:20:06,670 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=200
+2025-08-16 13:20:06,675 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=200
+2025-08-16 13:20:07,074 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=160
+2025-08-16 13:20:07,272 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=210
+2025-08-16 13:20:07,336 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=210
+2025-08-16 13:20:07,766 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=170
+2025-08-16 13:20:07,842 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=220
+2025-08-16 13:20:07,913 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=220
+2025-08-16 13:20:08,363 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=230
+2025-08-16 13:20:08,492 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=230
+2025-08-16 13:20:08,905 - INFO - Fetching: https://www.google.com/search?q=tesla&hl=en-US&tbs=sbd:1,qdr:d&tbm=nws&start=240
+2025-08-16 13:20:09,062 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=240
+2025-08-16 13:20:09,477 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=180
+2025-08-16 13:20:09,711 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=250
+2025-08-16 13:20:10,178 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=190
+2025-08-16 13:20:10,178 - INFO - Rotating proxy: 8.219.97.248:80 -> 190.103.177.131:80
+2025-08-16 13:20:10,839 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=200
+2025-08-16 13:20:11,010 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=260
+2025-08-16 13:20:11,303 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=210
+2025-08-16 13:20:11,621 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=270
+2025-08-16 13:20:12,197 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=280
+2025-08-16 13:20:12,249 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=220
+2025-08-16 13:20:12,905 - INFO - Fetching: https://www.google.com/search?q=crypto&hl=en-US&tbs=sbd:1,qdr:m&tbm=nws&start=290
+2025-08-16 13:20:12,932 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=230
+2025-08-16 13:20:13,661 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=240
+2025-08-16 13:20:14,130 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=250
+2025-08-16 13:20:14,131 - INFO - Rotating proxy: 190.103.177.131:80 -> 82.102.10.253:80
+2025-08-16 13:20:15,129 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=260
+2025-08-16 13:20:15,857 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=270
+2025-08-16 13:20:17,622 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=280
+2025-08-16 13:20:18,436 - INFO - Fetching: https://www.google.com/search?q=ai&hl=en-US&tbs=sbd:1,qdr:w&tbm=nws&start=290
+2025-08-16 13:20:19,125 - INFO - Keyword 'tesla:1:d': 240 articles found
+2025-08-16 13:20:19,125 - INFO - Keyword 'ai:1:w': 300 articles found
+2025-08-16 13:20:19,125 - INFO - Keyword 'crypto:1:m': 300 articles found
+2025-08-16 13:20:19,132 - INFO - Exported 840 articles to output_2025_08_16.csv
+2025-08-16 13:20:19,133 - INFO - Exported summary to output_count_2025_08_16.csv
+2025-08-16 13:20:19,134 - INFO - Scraping completed in 26.58 seconds

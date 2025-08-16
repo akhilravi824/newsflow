@@ -628,414 +628,282 @@ def landing_page():
     """Landing page for the API service."""
     html_content = """
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
-        <title>News API Service</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>NewsFlow Analytics Hub</title>
         <style>
-            body { font-family: Arial, sans-serif; margin: 40px; background: #ffffff; color: #000000; }
-            .container { max-width: 1200px; margin: 0 auto; }
-            .header { text-align: center; margin-bottom: 30px; }
-            .main-content { display: block; }
-            .search-section { background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e5e5e5; }
-            .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-            .plan { border: 1px solid #000; padding: 16px; text-align: center; border-radius: 8px; background: #fff; }
-            .plan.featured { border-width: 2px; }
-            .price { font-size: 2em; color: #000; }
-            .cta { background: #000; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; border: 1px solid #000; }
-            .form-group { margin-bottom: 16px; }
-            .form-group label { display: block; margin-bottom: 6px; font-weight: bold; }
-            .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #000; border-radius: 5px; font-size: 16px; background: #fff; color: #000; }
-            .search-btn { background: #000; color: #fff; padding: 12px 30px; border: 1px solid #000; border-radius: 5px; font-size: 16px; cursor: pointer; width: 100%; }
-            .search-btn:hover { background: #111; }
-            .results { margin-top: 20px; }
-            .loading { text-align: center; padding: 20px; color: #000; border: 1px solid #e5e5e5; border-radius: 8px; background: #fff; }
-            .error { background: #f5f5f5; color: #000; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #000; }
-            .success { background: #f5f5f5; color: #000; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #000; }
-            .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-            .tab { padding: 10px 14px; text-align: center; background: #fff; border: 1px solid #000; cursor: pointer; border-radius: 6px; }
-            .tab.active { background: #000; color: #fff; }
-            .tab-content { display: none; }
-            .tab-content.active { display: block; }
-            .suggestions { position: relative; background: #fff; border: 1px solid #000; border-top: none; max-height: 180px; overflow-y: auto; border-radius: 0 0 6px 6px; }
-            .suggestion-item { padding: 8px 10px; cursor: pointer; }
-            .suggestion-item:hover { background: #f5f5f5; }
-            .search-history { background: #fff; border: 1px solid #000; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
-            .history-items { display: flex; flex-wrap: wrap; gap: 8px; }
-            .history-chip { background: #fff; border: 1px solid #000; padding: 6px 10px; border-radius: 16px; cursor: pointer; font-size: 13px; }
-            .history-chip:hover { background: #f5f5f5; }
-            #loadMoreSection { text-align: center; margin-top: 16px; }
-            /* ESG heartbeat logo (removed) */
-            .esg-logo { display: none; }
-            /* Results table */
-            .news-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #000; border-radius: 8px; overflow: hidden; }
-            .news-table th, .news-table td { border-bottom: 1px solid #000; padding: 12px; text-align: left; vertical-align: top; }
-            .news-table th { background: #000; color: #fff; font-weight: 700; font-size: 0.9em; }
-            .news-table tr:hover { background: #f5f5f5; }
-            /* Loader flipboard */
-            .flipboard { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 14px; }
-            .flap { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; letter-spacing: 0.5px; background: #fff; color: #000; border: 1px solid #000; border-radius: 8px; padding: 10px 12px; }
+            :root { --primary:#667eea; --primary2:#764ba2; --bg:#0e1330; --card:#10163a; --muted:#9aa4b2; }
+            * { box-sizing: border-box; }
+            body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: radial-gradient(1200px 600px at 30% -20%, rgba(118,75,162,0.25), transparent), radial-gradient(1000px 500px at 90% 0%, rgba(102,126,234,0.25), transparent), var(--bg); color: #e8edf3; }
+            .shell { max-width: 1100px; margin: 0 auto; padding: 24px; }
+            header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 8px 0 18px; }
+            .brand { display:flex; align-items:center; gap:10px; }
+            .brand .logo { width:36px; height:36px; border-radius:8px; background: linear-gradient(135deg, var(--primary), var(--primary2)); box-shadow: 0 10px 30px rgba(118,75,162,0.35); }
+            .brand h1 { font-size: 1.25rem; margin:0; letter-spacing:.2px; }
+            nav { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+            .tab { background: transparent; border: 1px solid rgba(255,255,255,0.12); color:#dfe7ef; padding:8px 12px; border-radius:8px; cursor:pointer; }
+            .tab.active { background: linear-gradient(135deg, rgba(102,126,234,0.18), rgba(118,75,162,0.18)); border-color: transparent; }
+            .grid2 { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
+            .left { grid-column: span 8; }
+            .right { grid-column: span 4; }
+            @media (max-width: 900px){ .left{grid-column: span 12;} .right{grid-column: span 12;} }
+            .card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); border-radius:14px; padding:16px 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05); }
+            h2 { font-size: 1.05rem; margin:0 0 10px; color:#ffffff; letter-spacing:.2px; }
+            p.muted, .muted { color: var(--muted); margin: 4px 0 12px; font-size:.95rem; }
+            label { display:block; font-size:.85rem; color:#c8d1db; margin:8px 0 6px; }
+            input, select, textarea { width:100%; background:#0b1030; color:#e6edf6; border:1px solid rgba(255,255,255,0.12); border-radius:8px; padding:10px 12px; outline:none; }
+            input::placeholder{ color:#6e7787; }
+            .row { display:flex; gap:10px; flex-wrap:wrap; }
+            .row > div { flex:1 1 220px; min-width:220px; }
+            .btn { background: linear-gradient(135deg, var(--primary), var(--primary2)); color:#fff; border:none; border-radius:8px; padding:10px 14px; cursor:pointer; box-shadow: 0 10px 20px rgba(118,75,162,0.35); }
+            .btn.secondary { background:#0b1030; border:1px solid rgba(255,255,255,0.12); color:#dfe7ef; box-shadow:none; }
+            .stack { display:flex; flex-direction:column; gap:10px; }
+            .kpi { display:flex; gap:12px; flex-wrap:wrap; }
+            .kpi .pill { background:#0b1030; border:1px solid rgba(255,255,255,0.12); color:#cbd5e1; border-radius:999px; padding:6px 10px; font-size:.85rem; }
+            .list { display:flex; flex-direction:column; }
+            .item { padding:12px; border-top:1px dashed rgba(255,255,255,0.09); }
+            .item:first-child{ border-top:none; }
+            .item h3 { margin:0 0 4px; font-size:1rem; color:#fff; }
+            .right .card { position: sticky; top:16px; }
+            code.block { display:block; background:#0b1030; border:1px solid rgba(255,255,255,0.12); padding:12px; border-radius:8px; color:#d1eaff; white-space:pre-wrap; word-break:break-word; }
+            .ok{color:#8de38d;} .warn{color:#f0cc7b;} .err{color:#ff8a8a;}
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h1>News API</h1>
-                <p>Real-time news data via a clean API and web interface</p>
-            </div>
-            
-            <div class="main-content">
-                <div class="search-section">
-                    <div class="tabs">
-                        <button class="tab active" onclick="showTab('search')">Search</button>
-                        <button class="tab" onclick="showTab('api')">API</button>
-                        <button class="tab" onclick="showTab('pricing')">Pricing</button>
-                    </div>
-
-                    <div id="search-tab" class="tab-content active">
-                        <h2>News Search</h2>
-                        <div id="searchHistory" class="search-history" style="display: none;">
-                            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
-                                <h4 style="margin:0;">Recent Searches</h4>
-                                <button id="clearHistoryBtn" type="button" class="search-btn" style="padding:6px 10px; font-size:12px;">Clear</button>
-                            </div>
-                            <div id="historyItems" class="history-items"></div>
-                        </div>
-                        <form id="newsForm">
-                            <div class="form-group">
-                                <label for="keyword">Keyword/Topic:</label>
-                                <input type="text" id="keyword" name="keyword" placeholder="e.g., tesla, artificial intelligence, crypto" required autocomplete="off">
-                                <div id="suggestions" class="suggestions" style="display: none;"></div>
-                                <small>Enter the topic you want to search for news about</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="sort">Sort By:</label>
-                                <select id="sort" name="sort">
-                                    <option value="1">Relevance (Most relevant first)</option>
-                                    <option value="2">Date (Newest first)</option>
-                                </select>
-                                <small>Choose how to sort the news results</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="time">Time Range:</label>
-                                <select id="time" name="time">
-                                    <option value="d">Last 24 hours</option>
-                                    <option value="w">Last week</option>
-                                    <option value="m">Last month</option>
-                                    <option value="y">Last year</option>
-                                </select>
-                                <small>Select how far back to search for news</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="plan">Plan:</label>
-                                <select id="plan" name="plan">
-                                    <option value="free">Free</option>
-                                    <option value="starter">Starter</option>
-                                    <option value="pro">Pro</option>
-                                    <option value="enterprise">Enterprise</option>
-                                </select>
-                                <small>Select which plan to use for this request</small>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="language">Language:</label>
-                                <select id="language" name="language">
-                                    <option value="en">English</option>
-                                    <option value="es">Spanish</option>
-                                    <option value="fr">French</option>
-                                    <option value="de">German</option>
-                                </select>
-                                <small>Select language for news results</small>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="region">Region:</label>
-                                <select id="region" name="region">
-                                    <option value="US">United States</option>
-                                    <option value="GB">United Kingdom</option>
-                                    <option value="CA">Canada</option>
-                                    <option value="AU">Australia</option>
-                                </select>
-                                <small>Select region for news results</small>
-                            </div>
-                            
-                            <button type="submit" class="search-btn">Search News</button>
-                        </form>
-                        
-                        <div id="results" class="results"></div>
-                        <div id="loadMoreSection" style="display: none;">
-                            <button id="loadMoreBtn" class="search-btn" type="button">Load More Results</button>
-                        </div>
-                    </div>
-                    
-                    <div id="api-tab" class="tab-content">
-                        <h2>API Access</h2>
-                        <p>For developers and automated access, use our API endpoints:</p>
-                        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                            <h4>Get News:</h4>
-                            <code>GET /api/v1/news/{keyword}?sort={sort}&time={time}</code>
-                            <br><br>
-                            <h4>Headers:</h4>
-                            <code>X-API-Key: your_api_key_here</code>
-                        </div>
-                        <p><a href="/docs" class="cta">View Full API Documentation</a></p>
-                    </div>
-                    <div id="pricing-tab" class="tab-content">
-                        <h3>Pricing Plans</h3>
-                        <div class="pricing">
-                        <div class="plan">
-                            <h4>Free</h4>
-                            <div class="price">$0</div>
-                            <p>100 requests/day</p>
-                            <p>Basic data</p>
-                            <a href="/api/v1/register?plan=free" class="cta">Get Started</a>
-                        </div>
-                        
-                        <div class="plan featured">
-                            <h4>Starter</h4>
-                            <div class="price">$29</div>
-                            <p>1,000 requests/day</p>
-                            <p>Full data + support</p>
-                            <a href="/api/v1/register?plan=starter" class="cta">Choose Plan</a>
-                        </div>
-                        
-                        <div class="plan">
-                            <h4>Pro</h4>
-                            <div class="price">$99</div>
-                            <p>10,000 requests/day</p>
-                            <p>Priority support</p>
-                            <a href="/api/v1/register?plan=pro" class="cta">Choose Plan</a>
-                        </div>
-                        
-                        <div class="plan">
-                            <h4>Enterprise</h4>
-                            <div class="price">$299</div>
-                            <p>Unlimited requests</p>
-                            <p>Custom features</p>
-                            <a href="/api/v1/register?plan=enterprise" class="cta">Contact Sales</a>
-                        </div>
-                        </div>
-                        <div style="text-align: center; margin-top: 20px;">
-                            <h4>Resources</h4>
-                            <p><a href="/docs">API Documentation</a></p>
-                            <p><a href="/api/v1/register">Register for API Key</a></p>
-                        </div>
-                    </div>
+        <div class="shell">
+            <header>
+                <div class="brand">
+                    <div class="logo"></div>
+                    <h1>NewsFlow Analytics Hub</h1>
                 </div>
-            </div>
-        </div>
-        
-        <script>
-            function showTab(tabName) {
-                const tabContents = document.querySelectorAll('.tab-content');
-                tabContents.forEach(content => content.classList.remove('active'));
-                const tabs = document.querySelectorAll('.tab');
-                tabs.forEach(tab => tab.classList.remove('active'));
-                const target = document.getElementById(tabName + '-tab');
-                if (target) target.classList.add('active');
-                if (event && event.target) event.target.classList.add('active');
-            }
-            
-            document.getElementById('newsForm').addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                const keyword = document.getElementById('keyword').value;
-                const sort = document.getElementById('sort').value;
-                const time = document.getElementById('time').value;
-                 const plan = document.getElementById('plan').value;
-                const resultsDiv = document.getElementById('results');
-                const suggestionsDiv = document.getElementById('suggestions');
-                const historyContainer = document.getElementById('searchHistory');
-                const historyItems = document.getElementById('historyItems');
-                let currentPage = 0;
-                
-                // Futuristic flipboard loading sequence
-                resultsDiv.innerHTML = `
-                    <div class="loading">
-                        <div style="font-weight:600;margin-bottom:8px;">Fetching results...</div>
-                        <div class="flipboard" id="flipboard">
-                            <div class="flap">Parsing feeds ███▒▒▒▒▒▒</div>
-                            <div class="flap">Optimizing routes █████▒▒▒</div>
-                            <div class="flap">Rotating identities ███████▒</div>
-                            <div class="flap">Fetching news ████████</div>
-                            <div class="flap">Extracting articles ████████</div>
+                <nav id="tabs">
+                    <button class="tab active" data-tab="home">Home</button>
+                    <button class="tab" data-tab="search">Search</button>
+                    <button class="tab" data-tab="register">Register</button>
+                    <button class="tab" data-tab="stats">Stats</button>
+                    <button class="tab" data-tab="docs">Docs</button>
+                </nav>
+            </header>
+
+            <div class="grid2">
+                <section class="left">
+                    <!-- Home -->
+                    <div class="card" data-panel="home">
+                        <h2>Welcome</h2>
+                        <p class="muted">A consolidated dashboard to register, search, view usage, and read docs — all in one place.</p>
+                        <div class="kpi">
+                            <div class="pill">Fast async scraper</div>
+                            <div class="pill">Proxy rotation</div>
+                            <div class="pill">Rate limits by plan</div>
+                            <div class="pill">CSV export backend</div>
+                        </div>
+                        <div class="row" style="margin-top:12px;">
+                            <button class="btn" onclick="switchTab('search')">Start Searching</button>
+                            <button class="btn secondary" onclick="switchTab('register')">Create API Key</button>
+                            <a class="btn secondary" href="https://github.com/akhilravi824/newsflow" target="_blank" rel="noopener">GitHub</a>
                         </div>
                     </div>
-                `;
-                // Animate flipboard text
-                (function(){
-                    const steps = [
-                        'Parsing feeds ███▒▒▒▒▒▒',
-                        'Optimizing routes █████▒▒▒',
-                        'Rotating identities ███████▒',
-                        'Fetching news ████████',
-                        'Extracting articles ████████'
-                    ];
-                    const rows = Array.from(document.querySelectorAll('#flipboard .flap'));
-                    let tick = 0; const timer = setInterval(() => {
-                        rows.forEach((row, idx) => {
-                            const phase = (tick + idx) % steps.length;
-                            row.textContent = steps[phase];
-                        });
-                        tick++;
-                    }, 320);
-                    // Stop after 12 iterations or when results replace loader
-                    setTimeout(() => clearInterval(timer), 4000);
-                })();
-                
-                try {
-                    // First try to get a free API key
-                    const registerResponse = await fetch(`/api/v1/register?plan=${encodeURIComponent(plan)}`);
-                    const registerData = await registerResponse.text();
-                    
-                    // Extract API key from the response (simple parsing)
-                    const apiKeyMatch = registerData.match(/<div class="api-key">([a-f0-9]{32})<\/div>/);
-                    if (!apiKeyMatch) {
-                        throw new Error('Could not get API key');
-                    }
-                    
-                    const apiKey = apiKeyMatch[1];
-                    
-                    // Make the news API call
-                    const response = await fetch(`/api/v1/news/${keyword}?sort=${sort}&time=${time}`, {
-                        headers: {
-                            'X-API-Key': apiKey
-                        }
-                    });
-                    
-                    if (!response.ok) {
-                        throw new Error(`API Error: ${response.status}`);
-                    }
-                    
-                    const data = await response.json();
-                    
-                    // Display results in table format
-                    if (data.data && data.data.length > 0) {
-                        let html = `<div class="success">Found ${data.total_results} articles for "${keyword}"</div>`;
-                        html += `<table class="news-table"><thead><tr><th>Title</th><th>Description</th><th>Date</th></tr></thead><tbody>`;
-                        data.data.forEach(article => {
-                            html += `
-                                <tr>
-                                    <td><a href="${article.link}" target="_blank">${article.title}</a></td>
-                                    <td>${article.description || 'No description available'}</td>
-                                    <td>${article.date}</td>
-                                </tr>
-                            `;
-                        });
-                        html += `</tbody></table>`;
-                        resultsDiv.innerHTML = html;
-                        // Enable Load More if we have at least 10 results
-                        document.getElementById('loadMoreSection').style.display = 'block';
-                        currentPage = 0;
-                        // Save to history
-                        saveSearchHistory(keyword);
-                        renderHistory();
-                        // Hide suggestions
-                        suggestionsDiv.style.display = 'none';
-                    } else {
-                        resultsDiv.innerHTML = '<div class="error">❌ No news found for this keyword. Try a different search term.</div>';
-                        document.getElementById('loadMoreSection').style.display = 'none';
-                    }
-                    
-                } catch (error) {
-                    resultsDiv.innerHTML = `<div class="error">❌ Error: ${error.message}</div>`;
+
+                    <!-- Search -->
+                    <div class="card" data-panel="search" style="display:none;">
+                        <h2>Search News</h2>
+                        <p class="muted">Enter a keyword, select time/sort and search using your API key.</p>
+                        <div class="row">
+                            <div>
+                                <label>Keyword</label>
+                                <input id="kw" type="text" placeholder="e.g., Tesla" />
+                            </div>
+                            <div>
+                                <label>Time Range</label>
+                                <select id="time"><option value="d">Day</option><option value="w">Week</option><option value="m">Month</option><option value="y">Year</option></select>
+                            </div>
+                            <div>
+                                <label>Sort</label>
+                                <select id="sort"><option value="1">Relevance</option><option value="2">Date</option></select>
+                            </div>
+                            <div>
+                                <label>Page (multiple of 10)</label>
+                                <input id="page" type="number" value="0" min="0" step="10" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <button class="btn" onclick="doSearch()">Search</button>
+                            <button class="btn secondary" onclick="clearResults()">Clear</button>
+                            <span id="searchStatus" class="muted"></span>
+                        </div>
+                        <div id="results" class="list" style="margin-top:10px;"></div>
+                    </div>
+
+                    <!-- Register -->
+                    <div class="card" data-panel="register" style="display:none;">
+                        <h2>Create API Key</h2>
+                        <p class="muted">Choose a plan and enter an email (optional) to generate a key.</p>
+                        <div class="row">
+                            <div>
+                                <label>Plan</label>
+                                <select id="plan">
+                                    <option value="free">Free (100/day)</option>
+                                    <option value="starter">Starter (1,000/day)</option>
+                                    <option value="pro">Pro (10,000/day)</option>
+                                    <option value="enterprise">Enterprise (Unlimited)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Email (optional)</label>
+                                <input id="email" type="email" placeholder="you@example.com" />
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <button class="btn" onclick="doRegister()">Generate Key</button>
+                            <span id="regStatus" class="muted"></span>
+                        </div>
+                        <div id="regResult" class="stack" style="margin-top:10px;"></div>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="card" data-panel="stats" style="display:none;">
+                        <h2>Usage & Limits</h2>
+                        <p class="muted">Fetch your current plan, daily limit and remaining requests.</p>
+                        <div class="row">
+                            <button class="btn" onclick="fetchStats()">Refresh</button>
+                            <span id="statsStatus" class="muted"></span>
+                        </div>
+                        <div id="statsResult" class="stack" style="margin-top:10px;"></div>
+                    </div>
+
+                    <!-- Docs -->
+                    <div class="card" data-panel="docs" style="display:none;">
+                        <h2>API Docs (Quick)</h2>
+                        <p class="muted">Use <code>X-API-Key</code> header. Endpoint: <code>/api/v1/news/{keyword}</code></p>
+                        <div class="stack">
+                            <code class="block">GET /api/v1/news/Tesla?sort=1&time=d&page=0\nHeader: X-API-Key: YOUR_API_KEY</code>
+                            <code class="block" id="curlSample"></code>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <a class="btn secondary" href="/docs" target="_blank" rel="noopener">Open Full Docs</a>
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="right">
+                    <div class="card">
+                        <h2>Session</h2>
+                        <label>API Key</label>
+                        <input id="apiKey" type="text" placeholder="Paste your API key here" oninput="persistKey()" />
+                        <p class="muted" id="keyState"></p>
+                        <div class="stack">
+                            <button class="btn secondary" onclick="copyKey()">Copy Key</button>
+                            <button class="btn secondary" onclick="clearKey()">Clear</button>
+                        </div>
+                        <hr style="border:none;border-top:1px dashed rgba(255,255,255,0.12); margin:14px 0;" />
+                        <h2>Helpful Links</h2>
+                        <div class="stack">
+                            <a class="btn secondary" href="/health" target="_blank">Health</a>
+                            <a class="btn secondary" href="/test" target="_blank">Test</a>
+                            <a class="btn secondary" href="/api/v1/register?plan=free" target="_blank">Quick Register (GET)</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="muted" style="margin-top:18px;">© NewsFlow Analytics Hub</div>
+        </div>
+
+        <script>
+            // Tabs
+            function switchTab(name){
+                document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active', t.dataset.tab===name));
+                document.querySelectorAll('[data-panel]').forEach(p=>p.style.display = (p.dataset.panel===name?'block':'none'));
+            }
+            document.getElementById('tabs').addEventListener('click', (e)=>{
+                if(e.target.classList.contains('tab')) switchTab(e.target.dataset.tab);
+            });
+
+            // API key persistence
+            const keyInput = document.getElementById('apiKey');
+            function loadKey(){ const k = localStorage.getItem('newsflow_api_key')||''; keyInput.value = k; updateKeyState(); buildCurl(); }
+            function persistKey(){ localStorage.setItem('newsflow_api_key', keyInput.value.trim()); updateKeyState(); buildCurl(); }
+            function clearKey(){ keyInput.value=''; persistKey(); }
+            function copyKey(){ if(!keyInput.value) return; navigator.clipboard.writeText(keyInput.value); document.getElementById('keyState').textContent='Copied to clipboard'; setTimeout(updateKeyState,1200); }
+            function updateKeyState(){ const v = keyInput.value.trim(); document.getElementById('keyState').textContent = v? 'Key loaded' : 'No key set'; }
+
+            // Docs sample
+            function buildCurl(){
+                const k = keyInput.value.trim()||'YOUR_API_KEY';
+                const kw = encodeURIComponent(document.getElementById('kw')?.value || 'Tesla');
+                const t = document.getElementById('time')?.value || 'd';
+                const s = document.getElementById('sort')?.value || '1';
+                const curl = `curl -H "X-API-Key: ${k}" "http://localhost:4000/api/v1/news/${kw}?sort=${s}&time=${t}&page=0"`;
+                const el = document.getElementById('curlSample'); if(el) el.textContent = curl;
+            }
+
+            // Search
+            async function doSearch(){
+                const apiKey = keyInput.value.trim();
+                const kw = document.getElementById('kw').value.trim();
+                const t = document.getElementById('time').value; const s = document.getElementById('sort').value; const pg = parseInt(document.getElementById('page').value||'0',10)||0;
+                const status = document.getElementById('searchStatus'); const list = document.getElementById('results');
+                list.innerHTML=''; if(!apiKey){ status.textContent='Set an API key first'; return; } if(!kw){ status.textContent='Enter a keyword'; return; }
+                status.textContent='Searching...';
+                try{
+                    const res = await fetch(`/api/v1/news/${encodeURIComponent(kw)}?sort=${encodeURIComponent(s)}&time=${encodeURIComponent(t)}&page=${encodeURIComponent(pg)}`, { headers:{'X-API-Key': apiKey }});
+                    if(!res.ok){ const e = await res.json().catch(()=>({message:`HTTP ${res.status}`})); throw new Error(e.message); }
+                    const data = await res.json();
+                    renderArticles(data);
+                    status.textContent='Done';
+                }catch(err){ status.textContent = err.message || 'Request failed'; }
+            }
+            function clearResults(){ document.getElementById('results').innerHTML=''; document.getElementById('searchStatus').textContent=''; }
+            function renderArticles(resp){
+                const list = document.getElementById('results');
+                const { data=[], total_results=0, plan='', requests_remaining=null } = resp || {};
+                const head = document.createElement('div');
+                head.className='muted';
+                head.innerHTML = `Results: <strong>${total_results}</strong>` + (plan?` · Plan: ${plan}`:'') + (requests_remaining!=null?` · Remaining: ${requests_remaining}`:'');
+                list.appendChild(head);
+                if(!data.length){ const d=document.createElement('div'); d.className='muted'; d.textContent='No results'; list.appendChild(d); return; }
+                for(const a of data){
+                    const it = document.createElement('div'); it.className='item';
+                    const title = a.title || '(no title)'; const link = a.link || '#'; const date = a.date || ''; const desc = a.description || ''; const kw=a.keyword||'';
+                    it.innerHTML = `<h3><a href="${link}" target="_blank" rel="noopener">${title}</a></h3><div class="muted">${date} ${kw? ' · '+kw:''}</div>${desc?`<div style="margin-top:6px;">${desc}</div>`:''}`;
+                    list.appendChild(it);
                 }
-            });
-
-            // Load more results
-            document.getElementById('loadMoreBtn').addEventListener('click', async function() {
-                const keyword = document.getElementById('keyword').value;
-                const sort = document.getElementById('sort').value;
-                const time = document.getElementById('time').value;
-                const plan = document.getElementById('plan').value;
-                const resultsDiv = document.getElementById('results');
-
-                try {
-                    const registerResponse = await fetch(`/api/v1/register?plan=${encodeURIComponent(plan)}`);
-                    const registerData = await registerResponse.text();
-                    const apiKeyMatch = registerData.match(/<div class=\"api-key\">([a-f0-9]{32})<\/div>/);
-                    if (!apiKeyMatch) { throw new Error('Could not get API key'); }
-                    const apiKey = apiKeyMatch[1];
-
-                    const nextPage = (window.__currentPage__ || 0) + 1;
-                    const response = await fetch(`/api/v1/news/${keyword}?sort=${sort}&time=${time}&page=${nextPage}`, {
-                        headers: { 'X-API-Key': apiKey }
-                    });
-                    if (!response.ok) { throw new Error(`API Error: ${response.status}`); }
-                    const data = await response.json();
-
-                    if (data.data && data.data.length > 0) {
-                        let html = '';
-                        data.data.forEach(article => {
-                            html += `
-                                <div class=\"news-item\">
-                                    <div class=\"news-title\">
-                                        <a href=\"${article.link}\" target=\"_blank\">${article.title}</a>
-                                    </div>
-                                    ${article.description ? `<div class=\\"news-description\\">${article.description}</div>` : ''}
-                                    <div class=\"news-meta\">📅 ${article.date}</div>
-                                </div>
-                            `;
-                        });
-                        resultsDiv.insertAdjacentHTML('beforeend', html);
-                        window.__currentPage__ = nextPage;
-                    } else {
-                        document.getElementById('loadMoreSection').style.display = 'none';
-                    }
-                } catch (err) {
-                    console.error(err);
-                    document.getElementById('loadMoreSection').style.display = 'none';
-                }
-            });
-
-            // Search history helpers
-            function getHistory() {
-                try { return JSON.parse(localStorage.getItem('gn_history') || '[]'); } catch { return []; }
             }
-            function saveSearchHistory(keyword) {
-                const history = getHistory();
-                const filtered = history.filter(item => item !== keyword);
-                filtered.unshift(keyword);
-                localStorage.setItem('gn_history', JSON.stringify(filtered.slice(0, 8)));
-            }
-            function renderHistory() {
-                const container = document.getElementById('searchHistory');
-                const items = document.getElementById('historyItems');
-                const history = getHistory();
-                if (history.length === 0) { container.style.display = 'none'; return; }
-                container.style.display = 'block';
-                items.innerHTML = history.map(k => `<span class=\"history-chip\" data-k=\"${k}\">${k}</span>`).join('');
-                items.querySelectorAll('.history-chip').forEach(el => {
-                    el.addEventListener('click', () => {
-                        document.getElementById('keyword').value = el.getAttribute('data-k');
-                    });
-                });
-                document.getElementById('clearHistoryBtn').onclick = () => {
-                    localStorage.removeItem('gn_history');
-                    renderHistory();
-                };
-            }
-            renderHistory();
 
-            // Simple suggestions based on history
-            document.getElementById('keyword').addEventListener('input', function(e) {
-                const q = e.target.value.trim().toLowerCase();
-                const suggestionBox = document.getElementById('suggestions');
-                if (q.length < 2) { suggestionBox.style.display = 'none'; suggestionBox.innerHTML=''; return; }
-                const history = getHistory();
-                const matches = history.filter(h => h.toLowerCase().includes(q));
-                if (matches.length === 0) { suggestionBox.style.display = 'none'; suggestionBox.innerHTML=''; return; }
-                suggestionBox.innerHTML = matches.map(m => `<div class=\"suggestion-item\" data-k=\"${m}\">${m}</div>`).join('');
-                suggestionBox.style.display = 'block';
-                suggestionBox.querySelectorAll('.suggestion-item').forEach(el => {
-                    el.addEventListener('click', () => {
-                        document.getElementById('keyword').value = el.getAttribute('data-k');
-                        suggestionBox.style.display = 'none';
-                    });
-                });
-            });
+            // Register
+            async function doRegister(){
+                const plan = document.getElementById('plan').value; const email = document.getElementById('email').value.trim();
+                const status = document.getElementById('regStatus'); const out = document.getElementById('regResult');
+                status.textContent='Creating...'; out.innerHTML='';
+                try{
+                    const res = await fetch('/api/v1/register', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ plan, email: email||undefined }) });
+                    if(!res.ok){ const e = await res.json().catch(()=>({error:`HTTP ${res.status}`})); throw new Error(e.error||e.message||'Failed'); }
+                    const data = await res.json();
+                    out.innerHTML = `<div class="item"><div><strong>Plan:</strong> ${data.plan}</div><div><strong>API Key:</strong> <code>${data.api_key}</code></div></div>`;
+                    document.getElementById('apiKey').value = data.api_key || '';
+                    persistKey(); buildCurl();
+                    status.textContent='Success';
+                }catch(err){ status.textContent = err.message || 'Failed'; }
+            }
+
+            // Stats
+            async function fetchStats(){
+                const apiKey = keyInput.value.trim(); const status = document.getElementById('statsStatus'); const out = document.getElementById('statsResult');
+                out.innerHTML=''; if(!apiKey){ status.textContent='Set an API key first'; return; }
+                status.textContent='Loading...';
+                try{
+                    const res = await fetch('/api/v1/stats', { headers:{'X-API-Key': apiKey} });
+                    if(!res.ok){ const e = await res.json().catch(()=>({error:`HTTP ${res.status}`})); throw new Error(e.error||e.message||'Failed'); }
+                    const s = await res.json();
+                    out.innerHTML = `<div class="item"><div><strong>Plan:</strong> ${s.plan}</div><div><strong>Requests today:</strong> ${s.requests_today}</div><div><strong>Daily limit:</strong> ${s.daily_limit}</div><div><strong>Remaining:</strong> ${s.requests_remaining}</div><div class="muted">Created: ${s.created_date || '-'} · Last reset: ${s.last_reset || '-'}</div></div>`;
+                    status.textContent='';
+                }catch(err){ status.textContent = err.message || 'Failed'; }
+            }
+
+            // Init
+            loadKey(); buildCurl();
         </script>
     </body>
     </html>
@@ -1120,6 +988,174 @@ def documentation():
         </ul>
         
         <p><a href="/">← Back to Home</a></p>
+    </body>
+    </html>
+    """
+    return html_content
+
+@app.route('/ui')
+def search_ui():
+    """Simple search UI that calls the existing API endpoint."""
+    html_content = """
+    <!DOCTYPE html>
+    <html lang=\"en\">
+    <head>
+        <meta charset=\"UTF-8\" />
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+        <title>NewsFlow - Simple Search UI</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 30px; color: #333; }
+            h1 { margin-bottom: 10px; }
+            .card { background: #f8f9fa; padding: 16px; border-radius: 8px; margin-bottom: 16px; }
+            label { display: block; margin: 8px 0 4px; font-weight: 600; }
+            input, select { width: 100%; max-width: 420px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+            button { background: #667eea; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; margin-top: 12px; }
+            button:hover { opacity: 0.9; }
+            .results { margin-top: 20px; }
+            .article { padding: 12px; border-bottom: 1px solid #eee; }
+            .article h3 { margin: 0 0 6px; font-size: 1.05rem; }
+            .muted { color: #777; font-size: 0.9rem; }
+            .row { display: flex; gap: 12px; flex-wrap: wrap; }
+            .row > div { flex: 1 1 220px; min-width: 220px; }
+            .badge { display: inline-block; background: #eef; color: #334; padding: 2px 8px; border-radius: 999px; font-size: 0.8rem; margin-left: 6px; }
+            .footer { margin-top: 24px; font-size: 0.9rem; }
+            .error { color: #b00020; margin-top: 8px; }
+            .ok { color: #2e7d32; }
+        </style>
+    </head>
+    <body>
+        <h1>NewsFlow Search</h1>
+        <div class=\"muted\">Use your API key to search Google News via the built-in API.</div>
+
+        <div class=\"card\">
+            <div class=\"row\">
+                <div>
+                    <label for=\"apiKey\">API Key</label>
+                    <input id=\"apiKey\" type=\"text\" placeholder=\"Enter your API key\" />
+                </div>
+                <div>
+                    <label for=\"keyword\">Keyword</label>
+                    <input id=\"keyword\" type=\"text\" placeholder=\"e.g., tesla\" />
+                </div>
+                <div>
+                    <label for=\"time\">Time Range</label>
+                    <select id=\"time\">
+                        <option value=\"d\">Day</option>
+                        <option value=\"w\">Week</option>
+                        <option value=\"m\">Month</option>
+                        <option value=\"y\">Year</option>
+                    </select>
+                </div>
+                <div>
+                    <label for=\"sort\">Sort By</label>
+                    <select id=\"sort\">
+                        <option value=\"1\">Relevance</option>
+                        <option value=\"2\">Date</option>
+                    </select>
+                </div>
+                <div>
+                    <label for=\"page\">Page (multiple of 10)</label>
+                    <input id=\"page\" type=\"number\" value=\"0\" min=\"0\" step=\"10\" />
+                </div>
+            </div>
+            <button id=\"searchBtn\">Search</button>
+            <div id=\"status\" class=\"muted\" style=\"margin-top:8px\"></div>
+            <div id=\"error\" class=\"error\"></div>
+        </div>
+
+        <div class=\"results\" id=\"results\"></div>
+
+        <div class=\"footer muted\">
+            Tip: Register a key at <code>/api/v1/register</code>. Read docs at <code>/docs</code>.
+        </div>
+
+        <script>
+            const $ = (id) => document.getElementById(id);
+            const statusEl = $("status");
+            const errorEl = $("error");
+            const resultsEl = $("results");
+
+            function setStatus(text, ok=false) {
+                statusEl.textContent = text || "";
+                statusEl.className = ok ? "muted ok" : "muted";
+            }
+
+            function setError(text) {
+                errorEl.textContent = text || "";
+            }
+
+            function renderResults(resp) {
+                const { data = [], total_results = 0, plan = "", requests_remaining = null } = resp || {};
+                resultsEl.innerHTML = "";
+
+                const header = document.createElement('div');
+                header.className = 'muted';
+                header.innerHTML = `Results: <strong>${total_results}</strong> <span class="badge">Plan: ${plan}</span>` +
+                                   (requests_remaining !== null ? ` <span class="badge">Remaining: ${requests_remaining}</span>` : "");
+                resultsEl.appendChild(header);
+
+                if (!Array.isArray(data) || data.length === 0) {
+                    const empty = document.createElement('div');
+                    empty.className = 'muted';
+                    empty.style.marginTop = '8px';
+                    empty.textContent = 'No results.';
+                    resultsEl.appendChild(empty);
+                    return;
+                }
+
+                for (const item of data) {
+                    const div = document.createElement('div');
+                    div.className = 'article';
+                    const title = item.title || '(no title)';
+                    const link = item.link || '#';
+                    const date = item.date || '';
+                    const desc = item.description || '';
+                    const kw = item.keyword || '';
+                    div.innerHTML = `
+                        <h3><a href="${link}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
+                        <div class="muted">${date}${kw ? ` · ${kw}` : ''}</div>
+                        ${desc ? `<div style="margin-top:6px">${desc}</div>` : ''}
+                    `;
+                    resultsEl.appendChild(div);
+                }
+            }
+
+            async function doSearch() {
+                setError("");
+                setStatus("Searching...");
+                resultsEl.innerHTML = "";
+
+                const apiKey = $("apiKey").value.trim();
+                const keyword = $("keyword").value.trim();
+                const time = $("time").value;
+                const sort = $("sort").value;
+                const page = parseInt($("page").value || '0', 10) || 0;
+
+                if (!apiKey) { setError("API key is required (use /api/v1/register). "); return; }
+                if (!keyword) { setError("Keyword is required."); return; }
+
+                const url = `/api/v1/news/${encodeURIComponent(keyword)}?sort=${encodeURIComponent(sort)}&time=${encodeURIComponent(time)}&page=${encodeURIComponent(page)}`;
+
+                try {
+                    const res = await fetch(url, { headers: { 'X-API-Key': apiKey } });
+                    if (!res.ok) {
+                        const err = await res.json().catch(() => ({}));
+                        throw new Error(err.message || `Request failed with ${res.status}`);
+                    }
+                    const data = await res.json();
+                    renderResults(data);
+                    setStatus("Done", true);
+                } catch (e) {
+                    setStatus("");
+                    setError(e.message || String(e));
+                }
+            }
+
+            document.getElementById('searchBtn').addEventListener('click', doSearch);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') doSearch();
+            });
+        </script>
     </body>
     </html>
     """
